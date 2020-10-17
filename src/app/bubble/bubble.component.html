@@ -1,0 +1,73 @@
+<mat-card>
+  <h1 class="title">Bubble Sort</h1>
+  <pre>
+  <span class="purple">for</span>(<span class="light-blue">let</span> <span class="dark-blue">i</span> = <span class="light-green">{{ index }}</span>; <span class="dark-blue">i</span> < <span class="light-blue">array</span>; <span class="dark-blue">i</span>++){{ open }}
+
+    <span class="purple">for</span>(<span class="light-blue">let</span> <span class="dark-blue">j</span> = <span class="light-green">{{ jIndex }}</span> <span class="dark-blue">j</span> < <span class="light-blue">array</span> - <span class="dark-blue">i</span> - <span class="light-green">1</span>; <span class="dark-blue">j</span>++){{ open }}
+
+    {{ close }}
+
+  {{ close }}
+  </pre>
+  <mat-card-content>
+    <p>Length</p>
+    <mat-radio-group
+      (change)="generateData()"
+      [(ngModel)]="length"
+      aria-label="Select an option"
+    >
+      <mat-radio-button value="50">50</mat-radio-button>
+      <mat-radio-button value="100">100</mat-radio-button>
+      <mat-radio-button value="500">500</mat-radio-button>
+    </mat-radio-group>
+  </mat-card-content>
+  <mat-card-content>
+    <p>Speed</p>
+    <mat-radio-group [(ngModel)]="speed" aria-label="Select an option">
+      <mat-radio-button value="1000">Slow</mat-radio-button>
+      <mat-radio-button value="300">Medium</mat-radio-button>
+      <mat-radio-button value="50">Fast</mat-radio-button>
+      <mat-radio-button value="1">Super Fast</mat-radio-button>
+    </mat-radio-group>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button
+      matTooltip="Start sorting the array"
+      matTooltipClass="tooltip-blue"
+      mat-raised-button
+      color="accent"
+      (click)="sort()"
+    >
+      Sort
+    </button>
+    <button
+      matTooltip="Resets the array to a new one with random numbers"
+      matTooltipClass="tooltip-blue"
+      mat-raised-button
+      (click)="generateData()"
+    >
+      Reset
+    </button>
+  </mat-card-actions>
+  <mat-progress-bar mode="determinate" [value]="index * 2"></mat-progress-bar>
+  <mat-progress-bar
+    color="accent"
+    mode="determinate"
+    [value]="jIndex"
+  ></mat-progress-bar>
+</mat-card>
+
+<!-- Array of numbers  -->
+<div class="data">
+  <h1>const array = [</h1>
+  <div
+    *ngFor="let number of data; let i = index"
+    class="number"
+    [ngClass]="checkIndex(i)"
+  >
+    <p>{{ i }}</p>
+    <h1>{{ number }}</h1>
+  </div>
+  <h1>];</h1>
+</div>

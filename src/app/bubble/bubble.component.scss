@@ -1,0 +1,80 @@
+@import "~@angular/material/theming";
+
+$primary: mat-color($mat-amber, 200);
+$accent: mat-color($mat-blue-grey, 200);
+$warn: mat-color($mat-red);
+
+.active {
+  background-color: $accent;
+}
+
+.index {
+  background-color: $primary;
+}
+
+.tooltip-blue {
+  background-color: mat-color($mat-blue-grey, 800);
+  font-size: 11px;
+  text-align: center;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  box-shadow: 0 1px 2px 2px #23232350;
+  border-radius: 4px;
+  width: 42px;
+  padding: 3px 11px;
+  text-align: center;
+  margin: 4px;
+
+  p {
+    font-size: 11px;
+    margin: 2px auto;
+  }
+
+  h1 {
+    margin: 2px auto;
+  }
+}
+
+pre {
+  font-size: 2rem;
+}
+
+.purple {
+  color: rgb(145, 82, 145);
+  font-weight: bold;
+}
+
+.light-blue {
+  color: lightblue;
+  font-weight: bold;
+}
+
+.dark-blue {
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.light-green {
+  color: lightgreen;
+  font-weight: bold;
+}
+
+mat-card {
+  margin: 64px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+pre {
+  text-align: left;
+}
