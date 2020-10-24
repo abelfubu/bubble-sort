@@ -1,4 +1,4 @@
-# ViajesPlus
+# Bubble sort
 
 Estudiando en detalle el algoritmo bubble-sort y aplicando como es la funcionalidad con Angular.
 
@@ -12,7 +12,7 @@ Estudiando en detalle el algoritmo bubble-sort y aplicando como es la funcionali
 - Intentar esta funcionalidad de una manera visual e interactiva para poder ver en tiempo real como funciona.
 - Aplicando theming con angular material
 
-![Landing Page del proyecto](https://github.com/abelfubu/bubble-sort/tree/master/src/assets/Landing.png)
+![Landing Page del proyecto](https://raw.githubusercontent.com/abelfubu/bubble-sort/master/src/assets/Landing.png)
 
 ### Lenguajes
 
