@@ -4,6 +4,9 @@ $primary: mat-color($mat-amber, 200);
 $accent: mat-color($mat-blue-grey, 200);
 $warn: mat-color($mat-red);
 
+:host {
+  background-color: #a0a0a0;
+}
 .active {
   background-color: $accent;
 }
@@ -23,6 +26,7 @@ $warn: mat-color($mat-red);
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 32px 8% 72px;
 }
 
 .number {
@@ -44,7 +48,15 @@ $warn: mat-color($mat-red);
 }
 
 pre {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.mat-card {
+  margin: 32px 8%;
+  padding: 32px !important;
+  background: #ddd;
+  overflow: hidden;
 }
 
 .purple {
@@ -53,28 +65,20 @@ pre {
 }
 
 .light-blue {
-  color: lightblue;
+  color: rgb(53, 94, 107);
   font-weight: bold;
 }
 
 .dark-blue {
-  color: darkcyan;
+  color: rgb(14, 47, 47);
   font-weight: bold;
 }
 
 .light-green {
-  color: lightgreen;
+  color: rgb(87, 131, 87);
   font-weight: bold;
-}
-
-mat-card {
-  margin: 64px;
 }
 
 .mat-radio-button ~ .mat-radio-button {
   margin-left: 16px;
-}
-
-pre {
-  text-align: left;
 }

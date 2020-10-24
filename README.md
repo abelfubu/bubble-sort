@@ -1,27 +1,29 @@
-# BubbleSort
+# ViajesPlus
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+Estudiando en detalle el algoritmo bubble-sort y aplicando como es la funcionalidad con Angular.
 
-## Development server
+### Vista previa del proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Échale un ojo al proyecto final!](https://abelfubu.github.io/bubble-sort/)
 
-## Code scaffolding
+### Objetivos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Aprender conceptos básicos de como funciona el algoritmo bubble-sort
+- Intentar esta funcionalidad de una manera visual e interactiva para poder ver en tiempo real como funciona.
+- Aplicando theming con angular material
 
-## Build
+![Landing Page del proyecto](https://github.com/abelfubu/bubble-sort/tree/master/src/assets/Landing.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Lenguajes
 
-## Running unit tests
+- Angular
+- Typescript
+- Sass
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Autor
 
-## Running end-to-end tests
+[Abel de la Fuente - Perfil](https://abelfubu.github.io/abelfubu/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+[Github](https://github.com/abelfubu)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[Linkedin](https://www.linkedin.com/in/abel-de-la-fuente-53b0291aa/)
